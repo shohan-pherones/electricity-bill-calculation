@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electricity Bill Calculation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="bill-input-field">
+        <h1>Electricity Bill Calculation</h1>
+        <input
+          id="current-unit-input"
+          type="number"
+          placeholder="Enter current units"
+        />
+        <button onclick="unitCalculation()" id="unit-price-button">
+          Price
+        </button>
+      </div>
+      <div class="bill-results">
+        <table>
+          <thead>
+            <tr>
+              <th>Old Unit</th>
+              <th>Current Unit</th>
+              <th>Used Unit</th>
+              <th>Unit Price</th>
+              <th>Total Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="old-unit">0</td>
+              <td id="current-unit">0</td>
+              <td id="used-unit">0</td>
+              <td id="unit-price">0</td>
+              <td id="total-price">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
